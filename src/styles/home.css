@@ -23,11 +23,16 @@ html {
     top: 0;
     z-index: 3;
 }
-
+#img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
 body {
     background-color: #fff;
     background-image: url(https://www.transparenttextures.com/patterns/cubes.png);
-    height: 120vh;
+    height: 100vh;
     margin: 0;
     overflow-x: hidden;
     
@@ -71,9 +76,9 @@ body {
 
 #footer {
     background-color: #09f;
-    height: 900px;
+    height: 500px;
     position: absolute;
-    top: 920px;
+    top: 900px;
     width: 100%;
 }
 

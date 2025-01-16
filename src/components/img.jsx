@@ -1,10 +1,12 @@
 import React from "react";
 import reactDOM from "react-dom/client";
+import myface from "../assets/myface.png";
 
 function Image({animateOut, animateIn}) {
  return (<><div id="img-cont" className={`${animateOut ? "animate-out" : ""} ${
    animateIn ? "animate-in" : ""
  }`}><div id="img">
+  <img src={myface} alt="myface" />
 
     
 

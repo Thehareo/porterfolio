@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 
+
 const Header = ({ onComponentChange , animateOut, animateIn }) => {
   const [activeComponent, setActiveComponent] = useState("home");
   const handleButtonClick = (component) => {
