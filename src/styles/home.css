@@ -493,7 +493,9 @@ body {
 }
 
 @media (max-width: 720px) {
-
+#header{
+   width:  100vw;
+}
  #name{
     font-size: 12px;
  }
