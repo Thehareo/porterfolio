@@ -585,7 +585,8 @@ body {
     width: 100%;
 }
 .wave{
-    display: none;
+    width: 0px;
+    height: 0px;
 }
 }
 
