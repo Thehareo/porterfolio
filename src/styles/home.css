@@ -581,9 +581,9 @@ body {
 ::-webkit-scrollbar {
     width: 0px;
 }
-#body{
-    width: 100vw;
-    height: 100vh;
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
 }
 .wave{
     width: 0px;
