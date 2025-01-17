@@ -32,7 +32,7 @@ html {
 body {
     background-color: #fff;
     background-image: url(https://www.transparenttextures.com/patterns/cubes.png);
-    height: 100vh;
+    height: 100%;
     margin: 0;
     overflow-x: hidden;
     
@@ -90,6 +90,7 @@ body {
     transition: 1s;
     width: 200px;
     z-index: 2;
+ 
 }
 
 #img-cont:hover #img {
@@ -497,4 +498,53 @@ body {
     transition: 1s;
 }
 
+@media (max-width: 768px) {
+    #name{
+        font-size: 25px;
+    }
+    #contacts{
+        font-size: 25px;
 
+    }
+    #projects{
+        font-size: 25px;
+
+    }
+    #img{
+        width: 120px;
+        height: 120px;
+        
+    }
+    #img-cont{
+        width: 150px;
+        height: 150px;
+    }
+    #img-cont:hover #img{
+        width: 150px;
+        height: 150px;
+       margin-bottom: 200px;
+       transform: translateY(-120%);
+     
+    
+        
+    }
+    #introdiv{
+        width: 100px;
+    }
+    #intro{
+transform: translateX(0px) translateY(200px);
+    }
+    #img-cont:hover #intro{
+        transform: translateX(0px) translateY(50px);
+    }
+    #proj-cont div{
+        height: 200px;
+        width: 200px;
+    }
+    #proj1:hover{
+        width: 350px;
+    }
+    #proj2:hover{
+        width: 350px;
+    }
+}
