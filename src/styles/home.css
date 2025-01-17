@@ -540,11 +540,19 @@ transform: translateX(0px) translateY(200px);
     #proj-cont div{
         height: 200px;
         width: 200px;
+        
+    }
+    #proj-cont{
+        gap: 15px;
     }
     #proj1:hover{
-        width: 350px;
+        width: 300px;
     }
     #proj2:hover{
-        width: 350px;
+        width: 300px;
+    }
+    #footer{
+        bottom: 0px;
+        
     }
 }
