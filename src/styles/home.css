@@ -36,6 +36,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     
+    
 }
 
 #name {
@@ -79,15 +80,22 @@ body {
 
 #footer {
     background-color: #09f;
-    height: 500px; /* Footer height */
+    height: 500px; 
     width: 100%;
-    position: relative; /* Allow footer to be positioned based on document flow */
+    margin-top: 500px;
+   
     text-align: center;
     color: white;
     font-size: 18px;
-    top: 950px
+  
   }
-
+#wave-cont {
+  height: 500px;
+  width: 100%;
+   position: absolute;
+   bottom: 0px;
+   
+}
 #img {
     background-color: #b9bcbe;
     border-radius: 50%;
@@ -607,16 +615,16 @@ transform: translateX(0px) translateY(200px);
         flex-direction: column;
     }
     #proj1:hover{
-        height: 200px;
-        width: 350px;
+        height: 180px;
+        width: 330px;
     }
     #proj2:hover{
-        height: 200px;
-        width: 350px;
+        height: 180px;
+        width: 330px;
     }
     #footer{
         bottom: 0px;
-        top: 810px;
+        
         
     } .burger-container {
         display: flex;
@@ -628,6 +636,12 @@ transform: translateX(0px) translateY(200px);
       #contacts svg{
         width: 100px;
         height: 100px;
+      }
+      #contacts p{
+        font-size: 30px;
+      }
+      #insta{
+        margin-top: 150px;
       }
       #contacts{
         gap: 10px;

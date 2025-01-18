@@ -50,7 +50,7 @@ const App = () => {
         )}
       </div>
       <Scroller />
-      <Footer />
+     
     </div>
   );
 };
