@@ -57,6 +57,9 @@ body {
     text-decoration: none;
     transition: .5s;
 }
+#contact{
+    margin-right: 25px;
+}
 
 .wave {
     bottom: 0;
@@ -76,11 +79,14 @@ body {
 
 #footer {
     background-color: #09f;
-    height: 500px;
-    position: absolute;
-    top: 900px;
+    height: 500px; /* Footer height */
     width: 100%;
-}
+    position: relative; /* Allow footer to be positioned based on document flow */
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    top: 950px
+  }
 
 #img {
     background-color: #b9bcbe;
@@ -497,7 +503,58 @@ body {
 #proj2 img {
     transition: 1s;
 }
-
+.burger-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .burger {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .burger-container.hidden .burger {
+    opacity: 0; 
+  }
+  
+  .menu {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 110px;
+    top: 0;
+    right: -100%; 
+    height: 100vh;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: -4px 0px 6px rgba(0, 0, 0, 0.1);
+    transition: right 0.5s ease;
+    padding: 20px;
+    gap: 20px;
+    
+  }
+  
+  .menu.open {
+    right: 0;
+    z-index: 0.1;
+  }
+  
+  .menu p {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .desktop-menu{
+    display: flex;
+    gap: 20px;
+  }
 @media (max-width: 768px) {
     #name{
         font-size: 25px;
@@ -513,11 +570,13 @@ body {
     #img{
         width: 120px;
         height: 120px;
+        transform: translateX(10px);
         
     }
     #img-cont{
         width: 150px;
         height: 150px;
+       
     }
     #img-cont:hover #img{
         width: 150px;
@@ -538,21 +597,39 @@ transform: translateX(0px) translateY(200px);
         transform: translateX(0px) translateY(50px);
     }
     #proj-cont div{
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
+
         
     }
     #proj-cont{
         gap: 15px;
+        flex-direction: column;
     }
     #proj1:hover{
-        width: 300px;
+        height: 200px;
+        width: 350px;
     }
     #proj2:hover{
-        width: 300px;
+        height: 200px;
+        width: 350px;
     }
     #footer{
         bottom: 0px;
+        top: 810px;
         
-    }
+    } .burger-container {
+        display: flex;
+
+      }
+      .desktop-menu{
+        display: none;
+      }
+      #contacts svg{
+        width: 100px;
+        height: 100px;
+      }
+      #contacts{
+        gap: 10px;
+      }
 }
