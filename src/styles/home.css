@@ -82,7 +82,7 @@ body {
     background-color: #09f;
     height: 500px; 
     width: 100%;
-    margin-top: 500px;
+    margin-top: 450px;
    
     text-align: center;
     color: white;
@@ -567,6 +567,23 @@ body {
     #name{
         font-size: 25px;
     }
+    #scroller{
+        height: 100px;
+        gap: 130px;
+        width: 1500px;
+        
+    }
+    #scroller svg{
+        height: 50px;
+    }
+    #scroller2{
+        height: 100px;
+        gap: 130px;
+        width: 1500px;
+    }
+    #scroller2 svg{
+        height: 50px;
+    }
     #contacts{
         font-size: 25px;
 
@@ -576,6 +593,7 @@ body {
 
     }
     #img{
+        margin-top: 100px;
         width: 120px;
         height: 120px;
         transform: translateX(10px);
@@ -599,6 +617,7 @@ body {
         width: 100px;
     }
     #intro{
+        margin-top: 220px;
 transform: translateX(0px) translateY(200px);
     }
     #img-cont:hover #intro{
@@ -641,9 +660,10 @@ transform: translateX(0px) translateY(200px);
         font-size: 30px;
       }
       #insta{
-        margin-top: 150px;
+        
       }
       #contacts{
+        margin-top: 100px;
         gap: 10px;
       }
 }
