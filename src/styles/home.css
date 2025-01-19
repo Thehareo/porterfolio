@@ -40,11 +40,16 @@ body {
 }
 
 #name {
-    color: #000;
-    font-size: 40px;
+    font-size: 60px;
     left: 2%;
     margin-right: auto;
     position: relative;
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(95deg, #03ffea, #0084ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #about,
@@ -74,8 +79,13 @@ body {
 #contact:hover,
 #home:hover,
 #project:hover {
-    color: #006eff;
+    color: #ffffff;
     cursor: pointer;
+    transform: translatey(-5px);
+    padding: 10px;
+
+    background-color: #00c3ff;
+    border-radius: 15px;
 }
 
 #footer {
@@ -666,4 +676,15 @@ transform: translateX(0px) translateY(200px);
         margin-top: 100px;
         gap: 10px;
       }
+      #contact:hover,
+#home:hover,
+#project:hover {
+    color: #000000;
+    cursor: pointer;
+    transform: translatey(-5px);
+    padding: 0px;
+
+background-color: transparent;
+    border-radius: 0px;
+}
 }
