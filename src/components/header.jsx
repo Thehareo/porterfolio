@@ -6,7 +6,7 @@ const Header = ({ onComponentChange, animateOut, animateIn }) => {
 
   const handleButtonClick = (component) => {
     onComponentChange(component);
-    if (isMobile) setIsMenuOpen(false); // Close menu in mobile view after selection
+    if (isMobile) setIsMenuOpen(false); 
 
   };
 
@@ -17,7 +17,7 @@ const Header = ({ onComponentChange, animateOut, animateIn }) => {
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
-      if (window.innerWidth >= 768) setIsMenuOpen(false); // Close menu if switching to desktop view
+      if (window.innerWidth >= 768) setIsMenuOpen(false); 
     };
 
     window.addEventListener("resize", handleResize);

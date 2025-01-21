@@ -38,7 +38,19 @@ body {
     
     
 }
-
+#web{
+    color: #000000;
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.5s;
+    
+   
+    
+}
+#img-cont:hover #web{
+    color: #008cff;
+}
 #name {
     font-size: 60px;
     left: 2%;
@@ -130,6 +142,7 @@ body {
 
 #intro {
     color: #000;
+    font-size: 20px;
     font-family: "Josefin Sans", serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
@@ -632,7 +645,8 @@ body {
         width: 100px;
     }
     #intro{
-        margin-top: 220px;
+        font-size: 15px;
+        margin-top: 190px;
 transform: translateX(0px) translateY(200px);
     }
     #img-cont:hover #intro{
